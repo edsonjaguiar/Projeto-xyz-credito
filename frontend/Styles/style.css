@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --shadow: #00000033;
+    --button: linear-gradient(to right, #0560AB, #0594B5);
+    --white: #fff;
+    --text: #b8b4b4;
+    --icons: #252525;
+}
+
+a[href="#top"]{
+    padding:10px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
+}
+
+#header{
+    background-image: url('../img/card.jpeg');
+    height: 90vh;
+    background-size: cover;
+}
+
+.create-account{
+    padding: 50px 100px;
+    margin-top: -140px;
+    background: #fff;
+    box-shadow: 0 0 20px 7px var(--shadow);
+    border-radius: 40px;
+}
+
+.img{
+    width: 80%;
+}
+
+.imgs{
+    width: 30%;
+}
+
+.text-justify{
+    font-size: 18px;
+}
+
+.create-account h1{
+    color: #333;
+}
+
+.create-account .home-btn{
+    margin-top: 10px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    background: var(--button);
+}
+
+.create-account .home-btn:hover{
+    box-shadow: 0 0 30px 14px var(--shadow);
+}
+
+#about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#about .col-md-6{
+    padding: 20px 10px;
+}
+
+#about h3{
+    margin: 20px auto;
+}
+
+#btnScroll {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #2880BF, #184D73);
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+    border-radius: 10px;
+}
+
+@media(max-width: 280px){
+    #create{
+        padding-bottom: 420px !important;
+    }
+}
+
+
+@media(max-width: 980px){
+    #create{
+        padding-bottom: 310px;
+    }
+}
+
+@media(max-width: 1024px){
+    #create{
+        padding-bottom: 320px;
+    }
+}
+
+#exampleInputEmail1{
+    width: 50%;
+    height: 7vh;
+    margin: 8px;
+    border: 2px solid #b6b5b5;
+    border-bottom: 2px solid #217ab0;
+    outline: none;
+}
+
+form{
+    margin: auto;
+    display: block;
+}
