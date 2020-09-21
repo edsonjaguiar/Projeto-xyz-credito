@@ -36,13 +36,7 @@ function todolist() {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     list.innerHTML +=
-      '<br><br>' +
       '<table id="t01">' +
-      '<tr>' +
-      '<th> Devedor' + '</th>' +
-      '<th> Pessoa a receber' + '</th>' +
-      '<th>Valor' + '</th>' +
-      '</tr>' +
       '<tr>' +
       '<td>' + devedor.value + '</td>' +
       '<td>' + receber.value + '</td>' +

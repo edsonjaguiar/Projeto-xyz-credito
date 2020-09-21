@@ -20,17 +20,54 @@
 </head>
 
 <style>
- #t01 {
-  width:100%;
-}
-#t01, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 15px;
-  text-align: left;
-}
+    #t01, #t02 {
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    #t01,
+    th,
+    td{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    
+   #t02,
+    th,
+    td{
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: left;
+                padding: 315px;
+    }
+
+    th,
+    td {
+        padding: 15px;
+        text-align: center;
+    }
+    .exit{
+        color: red;
+        cursor: pointer;
+        font-size: 18px;
+        margin-top: 18px;
+    }
+    #form{
+        margin-left: 40%;
+    }
+    .form-group{
+        width: 45%;
+    }
+    #form .Btn{
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-weight: bold;
+        background: #2e8de9;
+        width: 42%;
+        margin-left: 13px;
+        height: 2.1em;
+    }
 </style>
 
 <body>
@@ -38,7 +75,7 @@ th, td {
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
             <div class="container"><a class="navbar-brand" href="#">
                     <strong class="h6 mb-0 font-weight-bold text-uppercase title">XyzCréditos</strong></a>
-                <p>Sair</p>
+            <p class="exit">Sair</p>
                 </ul>
             </div>
             </div>
@@ -67,10 +104,19 @@ th, td {
             <button type="submit" class="Btn">Enviar</button>
 
         </form>
-        
+
     </section>
 
-    <section id="conteudo"></section>
+    <section id="conteudo">
+    <br><br>
+    <table id="t02">
+    <tr>
+     <th> Devedor</th>
+      <th> Pessoa a receber </th>
+      <th>Valor</th>
+      </tr>
+      </table>
+    </section>
 
     <script src="index.js"></script>
 
